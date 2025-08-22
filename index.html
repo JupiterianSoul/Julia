@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Compliments pour Julia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="timer"></h1>
+    <button id="btn-compliment">Compliment</button>
+    <p id="compliment">Appuie sur le bouton pour un compliment</p>
+    <button id="btn-dev">GABRIEL DEV MODE</button>
+  </div>
+
+  <!-- PIN -->
+  <div id="pin-overlay" class="overlay hidden">
+    <div class="popup">
+      <h2>Entrer le code PIN</h2>
+      <input id="pin-input" type="password" maxlength="6">
+      <button id="pin-ok">Valider</button>
+    </div>
+  </div>
+
+  <!-- Mode dev -->
+  <div id="dev-popup" class="overlay hidden">
+    <div class="popup">
+      <h2>Mode Développeur</h2>
+      <div class="row">
+        <button id="add">Ajouter</button>
+        <button id="edit">Éditer</button>
+        <button id="del">Supprimer</button>
+      </div>
+      <input id="input-text" placeholder="Écris un compliment">
+      <select id="select-list"></select>
+      <button id="close-dev">Fermer</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
